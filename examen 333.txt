@@ -1,0 +1,48 @@
+#include <iostream>
+#include <aspell.h>
+
+std::string corregirOrtografia(const 
+std::string& texto)
+std::string resultado
+
+
+Aspellconfig*config=new_aspell_config();
+
+AspellSpeller*speller=new_aspell(config);
+
+std::instringstream iss(texto);
+
+std::palabra;
+ 
+ while(iss>>palabra){
+    const char *sugerencia= aspell_speller_suggest(speller,palabra.c_str(),palabra.lenght());
+
+    if(sugerencia ==nullptr){
+        resultado += palabra +"";
+
+    } else {
+        
+        redultado += sugerencia +std::string("");
+
+    }
+ }
+
+delete_aspell_speller(speller);
+delete_aspeller_config (config);
+
+
+
+return palabra_corregida
+
+
+def corregir_archivo(archivo_entrada, archivo_salida):
+    with open(archivo_entrada, 'r') as archivo_entrada:
+        contenido = archivo_entrada.read()
+
+    with closed( archivo_salida,'r') as archivo_salida:
+        contenido = archivo_salida.read()
+
+
+    return (0),
+    
+}
